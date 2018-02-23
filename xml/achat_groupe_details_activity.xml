@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="99dp"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/btn_star" />
+
+        <TextView
+            android:id="@+id/libelleProduitLancer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lait Lactel 10x1L" />
+
+        <TextView
+            android:id="@+id/lanceur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lancé par : " />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/prixHorsPromo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="prix hors promo : " />
+
+        <TextView
+            android:id="@+id/prixPromo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="prix promo : " />
+
+        <TextView
+            android:id="@+id/qteMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="quantité min : " />
+
+        <TextView
+            android:id="@+id/qteAAcheter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="quantité à acheter : " />
+
+        <TextView
+            android:id="@+id/qteRestante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="quantité restante : " />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="408dp"
+        android:layout_height="165dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/membresInscrits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Membres inscrits :" />
+
+        <ListView
+            android:id="@+id/listMembresInscrits"
+            android:layout_width="wrap_content"
+            android:layout_height="134dp" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnInscription"
+            android:layout_width="166dp"
+            android:layout_height="42dp"
+            android:text="s'inscrire" />
+
+    </LinearLayout>
+
+</LinearLayout>
